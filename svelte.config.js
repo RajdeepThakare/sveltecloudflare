@@ -14,7 +14,3 @@ const config = {
 };
 
 export default config;
-
-export async function post({ request, platform }) {
-	const counter = platform.env.COUNTER.idFromName('A');
-}
