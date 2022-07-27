@@ -5,6 +5,11 @@ import adapter from '@sveltejs/adapter-cloudflare';
 const config = {
 	kit: {
 		adapter: adapter(),
+		vite: {
+            define: {
+                global: {}
+            }
+        },
 
 		// Override http methods in the Todo forms
 		methodOverride: {
@@ -18,4 +23,3 @@ export default config;
 export async function post({ request, platform }) {
 	const counter = platform.env.COUNTER.idFromName('A');
   }
-  
