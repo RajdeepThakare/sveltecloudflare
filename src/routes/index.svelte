@@ -1,5 +1,6 @@
 <script context="module">
 	export const prerender = true;
+	global = window
 </script>
 
 <script>
