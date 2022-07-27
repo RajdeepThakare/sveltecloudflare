@@ -4,7 +4,7 @@
 
 <script>
 	import Counter from '$lib/Counter.svelte';
-	global = window
+	//global = window
 </script>
 
 <svelte:head>
