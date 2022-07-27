@@ -5,11 +5,6 @@ import adapter from '@sveltejs/adapter-cloudflare';
 const config = {
 	kit: {
 		adapter: adapter(),
-		vite: {
-            define: {
-                global: {}
-            }
-        },
 
 		// Override http methods in the Todo forms
 		methodOverride: {
